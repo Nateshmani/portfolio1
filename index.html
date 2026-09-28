@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[COMPANY NAME] | Precision Automotive Spare Parts Manufacturer</title>
+<meta name="description" content="Precision automotive spare parts manufacturing: CNC machining, forging, casting and sheet metal for OEMs, Tier-1 suppliers and distributors.">
+<meta name="keywords" content="automotive spare parts manufacturer, CNC machining, forging, casting, OEM components, Tier-1 supplier">
+<meta property="og:title" content="[COMPANY NAME] | Precision Engineered. Built for Performance.">
+<meta property="og:description" content="Advanced automotive component manufacturing with rigorous quality control.">
+<meta property="og:image" content="https://example.com/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"[COMPANY NAME]","url":"https://example.com","email":"info@company.com","telephone":"+91 XXX XXX XXXX","description":"Automotive spare parts and precision component manufacturer."}</script>
+<style>
+/* ===== Tokens ===== */
+:root{--bg:#0c0d0f;--panel:#15171a;--panel2:#1c1f23;--line:#2a2e34;--steel:#8b929b;--silver:#cfd4da;--white:#f4f6f8;--acc:#ff5a1f;--acc2:#ff8a4d;--h:'Barlow Condensed','Arial Narrow',sans-serif;--b:'IBM Plex Sans',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--silver);font:400 16px/1.65 var(--b);overflow-x:hidden}
+h1,h2,h3{font-family:var(--h);color:var(--white);line-height:1;letter-spacing:.01em;text-transform:uppercase}
+h2{font-size:clamp(34px,5vw,58px);margin-bottom:18px}h3{font-size:24px;margin-bottom:8px}
+a{color:inherit;text-decoration:none}img,svg{max-width:100%}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.wrap{width:min(1240px,92%);margin:auto}
+section{padding:110px 0;position:relative}
+.alt{background:linear-gradient(180deg,var(--panel),var(--bg))}
+.tag{font:600 13px var(--h);letter-spacing:.2em;color:var(--acc);text-transform:uppercase;display:block;margin-bottom:14px}
+.lead{max-width:640px;color:var(--steel);margin-bottom:48px}
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 16px var(--h);letter-spacing:.12em;text-transform:uppercase;padding:15px 28px;border:1px solid var(--acc);background:var(--acc);color:#fff;cursor:pointer;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));transition:.25s}
+.btn:hover{background:var(--acc2);transform:translateY(-2px)}.btn:active{transform:none}
+.btn.ghost{background:transparent;color:var(--white);border-color:var(--steel)}.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.card{background:var(--panel);border:1px solid var(--line);padding:28px;position:relative;transition:.3s}
+.card:hover{border-color:var(--acc);transform:translateY(-5px)}
+.card:before{content:"";position:absolute;top:-1px;left:-1px;width:26px;height:26px;border-top:2px solid var(--acc);border-left:2px solid var(--acc);opacity:0;transition:.3s}.card:hover:before{opacity:1}
+.card p{color:var(--steel);font-size:15px}
+.num{font:600 14px var(--h);color:var(--acc);letter-spacing:.15em}
+.ico{width:46px;height:46px;stroke:var(--acc);fill:none;stroke-width:1.6;margin-bottom:16px}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+.note{font-size:12px;color:var(--steel);margin-top:18px}
+
+/* ===== Loader ===== */
+#loader{position:fixed;inset:0;z-index:99;background:var(--bg);display:grid;place-content:center;justify-items:center;gap:18px;transition:opacity .6s,visibility .6s}
+#loader.done{opacity:0;visibility:hidden}
+#loader svg{width:84px;animation:spin 2.4s linear infinite}
+#loader div{width:200px;height:2px;background:var(--line)}#loader i{display:block;height:100%;width:0;background:var(--acc);animation:ld 1.4s forwards}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes ld{to{width:100%}}
+
+/* ===== Nav ===== */
+nav{position:fixed;top:0;width:100%;z-index:50;padding:18px 0;transition:.35s}
+nav.solid{background:rgba(12,13,15,.94);backdrop-filter:blur(10px);padding:10px 0;border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font:700 26px var(--h);letter-spacing:.08em;color:var(--white);display:flex;align-items:center;gap:10px}.logo b{color:var(--acc)}
+.links{display:flex;gap:26px;list-style:none}
+.links a{font:600 14px var(--h);letter-spacing:.14em;color:var(--silver);padding:6px 0;border-bottom:2px solid transparent;transition:.25s}
+.links a:hover,.links a.on{color:var(--white);border-color:var(--acc)}
+#burger{display:none;background:none;border:1px solid var(--line);color:var(--white);width:44px;height:44px;font-size:22px;cursor:pointer}
+.navcta{padding:10px 20px;font-size:14px}
+
+/* ===== Hero ===== */
+#home{min-height:100vh;display:flex;align-items:center;padding:130px 0 90px;overflow:hidden;background:radial-gradient(ellipse at 75% 40%,#25282d 0,var(--bg) 65%)}
+#home canvas,.gridbg{position:absolute;inset:0;width:100%;height:100%}
+.gridbg{background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:60px 60px;opacity:.35;mask-image:radial-gradient(ellipse at 60% 50%,#000,transparent 75%);animation:pan 20s linear infinite}
+@keyframes pan{to{background-position:60px 60px}}
+.hero-art{position:absolute;right:-8%;top:50%;width:min(720px,70vw);transform:translateY(-50%);opacity:.5}
+.hero-art .r1{transform-origin:center;animation:spin 60s linear infinite}.hero-art .r2{transform-origin:center;animation:spin 40s linear infinite reverse}
+.hero-art *{transform-box:fill-box}
+#home .wrap{position:relative}
+.badge{display:inline-block;border:1px solid var(--acc);color:var(--acc);font:600 13px var(--h);letter-spacing:.22em;padding:7px 14px;margin-bottom:26px}
+#home h1{font-size:clamp(50px,9vw,128px);font-weight:700;margin-bottom:24px;background:linear-gradient(180deg,#fff,#9aa1aa);-webkit-background-clip:text;background-clip:text;color:transparent}
+#home h1 em{font-style:normal;-webkit-text-fill-color:var(--acc)}
+#home p{max-width:560px;font-size:18px;color:var(--silver);margin-bottom:38px}
+.btns{display:flex;gap:16px;flex-wrap:wrap}
+.ruler{position:absolute;left:0;bottom:0;width:100%;height:22px;background:repeating-linear-gradient(90deg,var(--steel) 0 1px,transparent 1px 12px);opacity:.35}
+
+/* ===== About ===== */
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:center}
+.tick{list-style:none;margin:22px 0;columns:2;gap:20px}.tick li{padding-left:22px;position:relative;margin-bottom:8px;font-size:15px;break-inside:avoid}.tick li:before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;background:var(--acc)}
+.visual{position:relative;aspect-ratio:1;background:var(--panel);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.visual svg{width:80%;animation:spin 90s linear infinite}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;position:absolute;inset:auto 12px 12px 12px}
+.stat{background:rgba(12,13,15,.9);border:1px solid var(--line);border-left:3px solid var(--acc);padding:12px 16px}
+.stat b{font:700 38px var(--h);color:var(--white);display:block;line-height:1}.stat span{font-size:13px;color:var(--steel)}
+
+/* ===== Products ===== */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.filters button{background:none;border:1px solid var(--line);color:var(--silver);font:600 13px var(--h);letter-spacing:.14em;padding:10px 16px;cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--acc)}.filters button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.prod{padding:0;overflow:hidden;cursor:pointer;transition:.4s;text-align:left;color:inherit;font:inherit}
+.prod.hide{display:none}.prod.pop{animation:pop .45s}
+@keyframes pop{from{opacity:0;transform:scale(.94)}}
+.thumb{aspect-ratio:16/10;background:radial-gradient(circle at 50% 40%,#2c3036,#14161a);display:grid;place-items:center;overflow:hidden}
+.thumb svg{width:58%;transition:transform .7s}.prod:hover .thumb svg{transform:rotate(25deg) scale(1.08)}
+.pbody{padding:20px 22px 22px}.pbody dl{font-size:13px;color:var(--steel);margin:10px 0 14px}.pbody dt{display:inline;color:var(--silver)}.pbody dd{display:inline}.pbody dd:after{content:"";display:block}
+.more{font:600 14px var(--h);letter-spacing:.14em;color:var(--acc)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:80;display:none;place-items:center;padding:20px}
+.modal.open{display:grid}
+.mbox{background:var(--panel);border:1px solid var(--acc);width:min(760px,100%);max-height:90vh;overflow:auto;padding:36px;position:relative;animation:pop .3s}
+.mbox table{width:100%;border-collapse:collapse;margin-top:18px}.mbox td{padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}.mbox td:first-child{color:var(--acc);font:600 14px var(--h);letter-spacing:.14em;width:38%;text-transform:uppercase}
+.x{position:absolute;top:12px;right:14px;background:none;border:0;color:var(--white);font-size:30px;cursor:pointer;width:44px;height:44px}
+
+/* ===== 3D / showcase ===== */
+.stage{position:relative;height:min(600px,80vh);background:radial-gradient(circle at 50% 45%,#2a2d33,#0e0f11);border:1px solid var(--line);overflow:hidden;touch-action:none;cursor:grab}
+.stage canvas{width:100%;height:100%;display:block}
+.stage .fb{position:absolute;inset:0;display:none;place-items:center}.stage.nofx .fb{display:grid}.stage.nofx canvas{display:none}
+.fb svg{width:min(420px,70%);animation:spin 40s linear infinite}
+.ctrl{position:absolute;left:14px;top:14px;display:flex;gap:8px;flex-wrap:wrap;z-index:2}
+.ctrl button{background:rgba(12,13,15,.85);border:1px solid var(--line);color:var(--white);font:600 13px var(--h);letter-spacing:.12em;padding:10px 14px;cursor:pointer;min-height:44px}.ctrl button:hover{border-color:var(--acc)}
+.hot{position:absolute;right:14px;top:14px;display:grid;gap:8px;z-index:2;width:min(230px,44%)}
+.hot button{text-align:left;background:rgba(12,13,15,.85);border:1px solid var(--line);color:var(--silver);padding:8px 12px;font:600 12px var(--h);letter-spacing:.14em;cursor:pointer}
+.hot button span{display:none;font:400 13px var(--b);letter-spacing:0;color:var(--steel);margin-top:4px}.hot button.on{border-color:var(--acc);color:#fff}.hot button.on span{display:block}
+
+/* ===== Process ===== */
+.tl{position:relative;padding-left:70px;max-width:900px}
+.tl:before,.tl .fill{content:"";position:absolute;left:23px;top:0;width:2px;height:100%;background:var(--line)}
+.tl .fill{background:var(--acc);height:0;transition:height .15s}
+.step{position:relative;margin-bottom:26px;display:grid;grid-template-columns:1fr 200px;gap:24px;align-items:center}
+.step .dot{position:absolute;left:-70px;top:14px;width:48px;height:48px;background:var(--bg);border:2px solid var(--line);display:grid;place-items:center;font:700 18px var(--h);color:var(--steel);transition:.4s}
+.step.in .dot{border-color:var(--acc);color:var(--acc)}
+.step .pic{aspect-ratio:16/10;background:var(--panel2);border:1px solid var(--line);display:grid;place-items:center}.step .pic svg{width:46%}
+
+/* ===== Quality / tech ===== */
+.q3{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.dash{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:40px 0}
+.gauge{border:1px solid var(--line);background:var(--panel);padding:22px;text-align:center}
+.gauge svg{width:120px;transform:rotate(-90deg)}.gauge circle{fill:none;stroke-width:7}.gauge .bg{stroke:var(--line)}.gauge .fg{stroke:var(--acc);stroke-dasharray:283;stroke-dashoffset:283;transition:stroke-dashoffset 1.6s}
+.gauge b{display:block;font:700 34px var(--h);color:var(--white)}.gauge span{font-size:14px;color:var(--steel)}
+.spec{border-left:3px solid var(--acc);background:var(--panel);padding:18px 22px}.spec small{color:var(--steel);letter-spacing:.14em;font:600 13px var(--h)}.spec b{display:block;font:700 28px var(--h);color:var(--white)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}.chips span{border:1px solid var(--line);padding:9px 16px;font-size:14px;transition:.25s}.chips span:hover{border-color:var(--acc);color:#fff}
+
+/* ===== Certs, map, clients ===== */
+.badges{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.cert{text-align:center;padding:34px 20px;border:1px solid var(--line);background:var(--panel);clip-path:polygon(50% 0,100% 12%,100% 88%,50% 100%,0 88%,0 12%);animation:fl 5s ease-in-out infinite}
+.cert:nth-child(2){animation-delay:-1s}.cert:nth-child(3){animation-delay:-2s}.cert:nth-child(4){animation-delay:-3s}
+@keyframes fl{50%{transform:translateY(-6px)}}
+.cert b{font:700 30px var(--h);color:var(--white);display:block}.cert span{font-size:12px;color:var(--acc);letter-spacing:.14em}
+.map{border:1px solid var(--line);background:var(--panel);padding:10px}
+.map svg{width:100%;display:block}
+.route{fill:none;stroke:var(--acc);stroke-width:1.5;stroke-dasharray:6 6;animation:dash 1.5s linear infinite}@keyframes dash{to{stroke-dashoffset:-24}}
+.pulse{animation:pl 2s ease-out infinite;transform-box:fill-box;transform-origin:center}@keyframes pl{to{transform:scale(3.2);opacity:0}}
+.logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.logos div{border:1px dashed var(--steel);padding:30px 10px;text-align:center;font:600 18px var(--h);letter-spacing:.16em;color:var(--steel);filter:grayscale(1);transition:.3s}.logos div:hover{color:var(--white);border-color:var(--acc)}
+
+/* ===== RFQ / contact / footer ===== */
+form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f{display:grid;gap:6px}.f.full{grid-column:1/-1}
+label{font:600 13px var(--h);letter-spacing:.14em;color:var(--silver);text-transform:uppercase}
+input,select,textarea{background:var(--panel);border:1px solid var(--line);color:var(--white);padding:13px 14px;font:inherit;width:100%;min-height:46px}
+input:focus,select:focus,textarea:focus{border-color:var(--acc);outline:none}
+.err{color:#ff8b7a;font-size:13px;min-height:18px}
+input[aria-invalid=true],select[aria-invalid=true]{border-color:#ff6a55}
+#ok{display:none;border:1px solid #3ecf8e;background:rgba(62,207,142,.08);padding:26px;color:var(--white)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:60px}
+.cgrid dt{color:var(--acc);font:600 13px var(--h);letter-spacing:.16em;margin-top:16px}
+.mapph{background:repeating-linear-gradient(45deg,var(--panel),var(--panel) 10px,var(--panel2) 10px,var(--panel2) 20px);border:1px solid var(--line);min-height:260px;display:grid;place-items:center;color:var(--steel)}
+footer{background:#08090a;border-top:1px solid var(--line);padding:70px 0 26px}
+.fg{display:grid;grid-template-columns:1.6fr repeat(4,1fr);gap:34px}
+footer h3{font-size:17px;letter-spacing:.14em}footer li{list-style:none;margin-bottom:8px;font-size:14px}footer a:hover{color:var(--acc)}
+.copy{margin-top:50px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--steel);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* ===== Responsive ===== */
+@media(max-width:1024px){.links,.navcta{display:none}#burger{display:block}.links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;width:100%;background:var(--bg);padding:20px 4%;gap:6px;border-bottom:1px solid var(--line);animation:pop .3s}.links.open a{display:block;padding:12px 0}.split,.cgrid{grid-template-columns:1fr;gap:40px}.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){section{padding:76px 0}form{grid-template-columns:1fr}.tick{columns:1}.step{grid-template-columns:1fr}.step .pic{display:none}.tl{padding-left:56px}.step .dot{left:-56px;width:40px;height:40px}.tl:before,.tl .fill{left:19px}.hot{display:none}.hero-art{opacity:.25}.fg{grid-template-columns:1fr}.btn{width:100%;justify-content:center}}
+@media(prefers-reduced-motion:reduce){*,*:before{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div id="loader" aria-hidden="true">
+  <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="#ff5a1f" stroke-width="10" stroke-dasharray="9 7.5"/><circle cx="50" cy="50" r="24" fill="none" stroke="#cfd4da" stroke-width="3"/><circle cx="50" cy="50" r="8" fill="#ff5a1f"/></svg>
+  <div><i></i></div>
+</div>
+
+<nav id="nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a class="logo" href="#home" aria-label="[COMPANY NAME] home"><svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="38" fill="none" stroke="#ff5a1f" stroke-width="12" stroke-dasharray="9 7.5"/><circle cx="50" cy="50" r="14" fill="#cfd4da"/></svg>[COMPANY <b>NAME]</b></a>
+    <ul class="links" id="links">
+      <li><a href="#home">HOME</a></li><li><a href="#about">ABOUT</a></li><li><a href="#capabilities">CAPABILITIES</a></li><li><a href="#products">PRODUCTS</a></li><li><a href="#process">PROCESS</a></li><li><a href="#quality">QUALITY</a></li><li><a href="#technology">TECHNOLOGY</a></li><li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <a class="btn navcta" href="#rfq">GET RFQ</a>
+    <button id="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<main>
+<!-- HERO -->
+<header id="home">
+  <div class="gridbg"></div><canvas id="particles" aria-hidden="true"></canvas>
+  <svg class="hero-art" viewBox="0 0 600 600" aria-hidden="true" fill="none" stroke="#8b929b" stroke-width="1">
+    <g class="r1"><circle cx="300" cy="300" r="280" stroke-dasharray="2 8"/><circle cx="300" cy="300" r="240" stroke="#ff5a1f" stroke-width="26" stroke-dasharray="20 14" opacity=".55"/></g>
+    <g class="r2"><circle cx="300" cy="300" r="170"/><circle cx="300" cy="300" r="120" stroke-dasharray="6 6"/></g>
+    <circle cx="300" cy="300" r="40" stroke="#ff5a1f"/><path d="M0 300h600M300 0v600M90 90l420 420M510 90L90 510" opacity=".4"/>
+    <text x="312" y="120" fill="#8b929b" stroke="none" font-size="12" font-family="monospace">Ø 240.00</text><text x="312" y="292" fill="#ff5a1f" stroke="none" font-size="12" font-family="monospace">Ø 80.00 H7</text>
+  </svg>
+  <div class="wrap">
+    <span class="badge">AUTOMOTIVE COMPONENT MANUFACTURING</span>
+    <h1>PRECISION ENGINEERED.<br><em>BUILT FOR PERFORMANCE.</em></h1>
+    <p>Advanced automotive spare parts manufacturing with precision engineering, rigorous quality control and reliable production capabilities.</p>
+    <div class="btns"><a class="btn" href="#rfq">REQUEST A QUOTE →</a><a class="btn ghost" href="#products">EXPLORE OUR PRODUCTS ↓</a></div>
+  </div>
+  <div class="ruler"></div>
+</header>
+
+<!-- ABOUT -->
+<section id="about"><div class="wrap split">
+  <div class="rv">
+    <span class="tag">About us</span>
+    <h2>ENGINEERING COMPONENTS THAT MOVE THE WORLD</h2>
+    <p>[COMPANY NAME] is a B2B manufacturer of automotive spare parts and precision components. We supply OEMs, Tier-1 suppliers, distributors and industrial customers with parts built to drawing, from prototype through series production.</p>
+    <ul class="tick"><li>Precision component manufacturing</li><li>Automotive spare parts</li><li>OEM manufacturing</li><li>Aftermarket components</li><li>CNC machining</li><li>Forging and casting</li><li>Sheet metal components</li><li>Fabrication and assembly</li></ul>
+    <a class="btn ghost" href="#capabilities">SEE CAPABILITIES</a>
+  </div>
+  <div class="visual rv" role="img" aria-label="Technical drawing of a machined gear">
+    <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#3a3f46" stroke-width="10" stroke-dasharray="7.8 7.8"/><circle cx="50" cy="50" r="30" fill="none" stroke="#8b929b" stroke-width=".6"/><circle cx="50" cy="50" r="14" fill="none" stroke="#ff5a1f" stroke-width="1"/></svg>
+    <div class="stats">
+      <div class="stat"><b data-n="20">0</b><span>Years Experience*</span></div><div class="stat"><b data-n="500">0</b><span>Components Manufactured*</span></div>
+      <div class="stat"><b data-n="50">0</b><span>Production Machines*</span></div><div class="stat"><b data-n="25">0</b><span>Countries Served*</span></div>
+    </div>
+  </div>
+</div><p class="wrap note">* Sample values. Replace with verified company data.</p></section>
+
+<!-- CAPABILITIES -->
+<section id="capabilities" class="alt"><div class="wrap">
+  <span class="tag">Capabilities</span><h2>MANUFACTURING CAPABILITIES</h2><p class="lead">Nine in-house processes, from raw bar stock to finished, inspected component.</p>
+  <div class="grid g3" id="capGrid"></div>
+</div></section>
+
+<!-- PRODUCTS -->
+<section id="products"><div class="wrap">
+  <span class="tag">Product catalog</span><h2>COMPONENTS WE MANUFACTURE</h2><p class="lead">Filter by system, then open a component for specifications. All values are sample data.</p>
+  <div class="filters" id="filters" role="group" aria-label="Filter products"></div>
+  <div class="grid g3" id="prodGrid"></div>
+</div></section>
+
+<!-- 3D SHOWCASE -->
+<section id="showcase" class="alt"><div class="wrap">
+  <span class="tag">Component showcase</span><h2>INSPECT A COMPONENT IN 3D</h2><p class="lead">Drag to rotate, scroll or pinch to zoom, and select a callout for engineering notes.</p>
+  <div class="stage" id="stage">
+    <canvas id="c3d" aria-label="Interactive 3D gear"></canvas>
+    <div class="fb"><svg viewBox="0 0 100 100" role="img" aria-label="Gear component illustration"><circle cx="50" cy="50" r="40" fill="none" stroke="#5a6068" stroke-width="10" stroke-dasharray="7.8 7.8"/><circle cx="50" cy="50" r="33" fill="#2b2f35" stroke="#cfd4da" stroke-width=".8"/><circle cx="50" cy="50" r="12" fill="#0c0d0f" stroke="#ff5a1f" stroke-width="1.5"/><circle cx="50" cy="50" r="22" fill="none" stroke="#8b929b" stroke-width=".5" stroke-dasharray="2 2"/></svg></div>
+    <div class="ctrl"><button id="reset">RESET</button><button id="light">LIGHTING</button><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div>
+    <div class="hot" id="hot"></div>
+  </div>
+</div></section>
+
+<!-- APPLICATIONS -->
+<section id="industries"><div class="wrap">
+  <span class="tag">Industries</span><h2>WHERE OUR COMPONENTS RUN</h2><p class="lead"></p>
+  <div class="grid g3" id="appGrid"></div>
+</div></section>
+
+<!-- PROCESS -->
+<section id="process" class="alt"><div class="wrap">
+  <span class="tag">Process</span><h2>FROM DRAWING TO DISPATCH</h2><p class="lead">Eight controlled stages, each with its own check.</p>
+  <div class="tl" id="tl"><div class="fill" id="tlfill"></div></div>
+</div></section>
+
+<!-- QUALITY -->
+<section id="quality"><div class="wrap">
+  <span class="tag">Quality</span><h2>QUALITY IS BUILT INTO EVERY COMPONENT</h2><p class="lead">Inspection is part of the process, not an afterthought.</p>
+  <div class="grid q3" id="qGrid"></div>
+  <div class="dash" id="dash"></div>
+  <p class="note">Dashboard figures are customizable sample values, not company claims.</p>
+</div></section>
+
+<!-- TECHNOLOGY -->
+<section id="technology" class="alt"><div class="wrap">
+  <span class="tag">Technology</span><h2>TECHNOLOGY &amp; MACHINERY</h2><p class="lead"></p>
+  <div class="grid g3" id="specGrid"></div>
+  <div class="chips" id="chips"></div>
+  <p class="note">Sample specifications. Customize to match your actual equipment.</p>
+</div></section>
+
+<!-- CERTIFICATIONS + WHY -->
+<section id="certs"><div class="wrap">
+  <span class="tag">Certifications</span><h2>STANDARDS WE WORK TO</h2><p class="lead">Editable placeholders. Show only certifications the company actually holds.</p>
+  <div class="badges">
+    <div class="cert"><b>ISO 9001</b><span>PLACEHOLDER</span></div><div class="cert"><b>IATF 16949</b><span>PLACEHOLDER</span></div><div class="cert"><b>ISO 14001</b><span>PLACEHOLDER</span></div><div class="cert"><b>ISO 45001</b><span>PLACEHOLDER</span></div>
+  </div>
+</div></section>
+
+<section id="why" class="alt"><div class="wrap">
+  <span class="tag">Why choose us</span><h2>WHY BUYERS STAY WITH US</h2><p class="lead"></p>
+  <div class="grid g3" id="whyGrid"></div>
+</div></section>
+
+<!-- GLOBAL -->
+<section id="global"><div class="wrap">
+  <span class="tag">Global reach</span><h2>SERVING GLOBAL AUTOMOTIVE MARKETS</h2><p class="lead">Sample regions with animated supply routes. Replace with your actual export markets.</p>
+  <div class="map"><svg viewBox="0 0 1000 480" id="worldmap" role="img" aria-label="Map of sample export regions from India"></svg></div>
+</div></section>
+
+<!-- CLIENTS -->
+<section id="clients" class="alt"><div class="wrap">
+  <span class="tag">Partners</span><h2>TRUSTED BY INDUSTRY PARTNERS</h2><p class="lead">Placeholders. Replace with customer logos you have permission to display.</p>
+  <div class="logos"><div>OEM PARTNER</div><div>AUTOMOTIVE GROUP</div><div>MOBILITY SYSTEMS</div><div>INDUSTRIAL SOLUTIONS</div><div>ENGINEERING CORP</div></div>
+</div></section>
+
+<!-- RFQ -->
+<section id="rfq"><div class="wrap" style="max-width:940px">
+  <span class="tag">Request for quotation</span><h2>HAVE A COMPONENT TO MANUFACTURE?</h2><p class="lead">Share your drawing, specification or component requirement with our engineering team.</p>
+  <form id="rfqForm" novalidate>
+    <div class="f"><label for="n">Full name</label><input id="n" required autocomplete="name"><span class="err"></span></div>
+    <div class="f"><label for="co">Company name</label><input id="co" required autocomplete="organization"><span class="err"></span></div>
+    <div class="f"><label for="em">Email</label><input id="em" type="email" required autocomplete="email"><span class="err"></span></div>
+    <div class="f"><label for="ph">Phone</label><input id="ph" type="tel" autocomplete="tel"><span class="err"></span></div>
+    <div class="f"><label for="ct">Country</label><input id="ct" autocomplete="country-name"><span class="err"></span></div>
+    <div class="f"><label for="pc">Product / component</label><input id="pc" required><span class="err"></span></div>
+    <div class="f"><label for="mt">Material</label><input id="mt"><span class="err"></span></div>
+    <div class="f"><label for="qt">Annual quantity</label><input id="qt" type="number" min="1"><span class="err"></span></div>
+    <div class="f full"><label for="pr">Required process</label><select id="pr"><option value="">Select a process</option></select></div>
+    <div class="f full"><label for="ms">Message</label><textarea id="ms" rows="4"></textarea></div>
+    <div class="f full"><label for="fl">Upload drawing (PDF, DWG, DXF, STEP, STL, JPG, PNG)</label><input id="fl" type="file" accept=".pdf,.dwg,.dxf,.step,.stp,.stl,.jpg,.jpeg,.png"><span class="err"></span></div>
+    <div class="f full"><button class="btn" type="submit">SUBMIT RFQ →</button></div>
+  </form>
+  <div id="ok" role="status" tabindex="-1"><h3>RFQ received</h3><p>Thank you. Our engineering team will review your requirement and reply within 1 business day. (Front-end demo: no data was sent.)</p></div>
+</div></section>
+
+<!-- CONTACT -->
+<section id="contact" class="alt"><div class="wrap">
+  <span class="tag">Contact</span><h2>TALK TO OUR TEAM</h2>
+  <div class="cgrid">
+    <div>
+      <dl><dt>HEAD OFFICE</dt><dd>[Company Address]</dd><dt>PHONE</dt><dd>+91 XXX XXX XXXX</dd><dt>EMAIL</dt><dd>info@company.com</dd><dt>SALES</dt><dd>sales@company.com</dd><dt>BUSINESS HOURS</dt><dd>Monday – Saturday, 9:00 AM – 6:00 PM</dd></dl>
+      <div class="btns" style="margin-top:28px">
+        <a class="btn ghost" href="mailto:info@company.com">EMAIL</a><a class="btn ghost" href="tel:+910000000000">CALL</a>
+        <a class="btn ghost" href="https://wa.me/910000000000" target="_blank" rel="noopener">WHATSAPP</a><a class="btn ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LINKEDIN</a>
+      </div>
+    </div>
+    <div class="mapph" role="img" aria-label="Google Maps placeholder">Google Maps embed placeholder</div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="fg">
+    <div><a class="logo" href="#home">[COMPANY <b>NAME]</b></a><p style="margin:14px 0;font-size:14px;color:var(--steel);max-width:300px">Precision automotive components for OEMs, Tier-1 suppliers and distributors.</p></div>
+    <div><h3>Products</h3><ul><li><a href="#products">Engine</a></li><li><a href="#products">Transmission</a></li><li><a href="#products">Braking</a></li></ul></div>
+    <div><h3>Capabilities</h3><ul><li><a href="#capabilities">CNC machining</a></li><li><a href="#capabilities">Forging</a></li><li><a href="#technology">Machinery</a></li></ul></div>
+    <div><h3>Quality</h3><ul><li><a href="#quality">Inspection</a></li><li><a href="#certs">Certifications</a></li></ul></div>
+    <div><h3>Contact</h3><ul><li><a href="#contact">Head office</a></li><li><a href="#rfq">Request a quote</a></li><li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
+  </div>
+  <div class="copy"><span>© 2026 [Company Name]. All Rights Reserved.</span><span><a href="#home">Privacy Policy</a> &nbsp;|&nbsp; <a href="#home">Terms &amp; Conditions</a></span></div>
+</div></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt1"><div class="mbox"><button class="x" id="mx" aria-label="Close">×</button><span class="tag" id="mcat"></span><h3 id="mt1" style="font-size:38px"></h3><table id="mtab"></table><p class="note">Sample specifications for demonstration.</p><a class="btn" href="#rfq" id="mrfq" style="margin-top:20px">REQUEST A QUOTE →</a></div></div>
+
+<script>
+"use strict";
+/* ===== Helpers ===== */
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* Reusable technical icon: variant i alters ring count, teeth and cross-hairs */
+const icon=(i,cls='ico')=>{const t=[8,10,12,6,14,9,7,11,13][i%9];return `<svg class="${cls}" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17" stroke-dasharray="${(107/t).toFixed(1)} ${(107/t).toFixed(1)}" stroke-width="5"/><circle cx="24" cy="24" r="${8+i%4*2}"/>${i%2?'<path d="M24 2v8M24 38v8M2 24h8M38 24h8"/>':'<rect x="19" y="19" width="10" height="10"/>'}</svg>`};
+const rv=el=>el.classList.add('rv');
+
+/* ===== Data (edit here) ===== */
+const CAPS=[["CNC Machining","High-precision machining for critical automotive components."],["CNC Turning","Precision turned components with tight tolerances."],["Milling","Multi-axis machining for complex geometries."],["Forging","High-strength forged automotive components."],["Casting","Precision casting for complex metal components."],["Sheet Metal","Automotive sheet metal and fabricated components."],["Grinding","High-precision surface and cylindrical grinding."],["Heat Treatment","Controlled thermal processing for enhanced component performance."],["Surface Finishing","Plating, coating, polishing and other finishing processes."]];
+const CATS=["ALL","ENGINE","TRANSMISSION","SUSPENSION","BRAKING","STEERING","ELECTRICAL","BODY COMPONENTS","INDUSTRIAL"];
+// [name, category, material, process, application, sizes, tolerance, finish, standards]
+const PRODS=[["Engine Components","ENGINE","Alloy steel","Forging + CNC","Passenger & commercial engines","Ø 20–150 mm","±0.02 mm","Ra 0.8 µm","ISO 9001 (placeholder)"],["Gear Components","TRANSMISSION","Case-hardened steel","Hobbing + Grinding","Gearboxes","Module 1–6","DIN 6","Ra 0.4 µm","DIN / ISO"],["Brake Components","BRAKING","Grey cast iron","Casting + Turning","Disc brake systems","Ø 200–380 mm","±0.03 mm","Ra 1.6 µm","ECE R90"],["Steering Components","STEERING","Carbon steel","Forging + Machining","Steering linkages","Ø 12–60 mm","±0.02 mm","Ra 1.2 µm","Customer drawing"],["Suspension Components","SUSPENSION","Spring steel","Forging + Heat treat","Leaf & coil systems","Custom","±0.05 mm","Phosphate coat","Customer drawing"],["Shafts","TRANSMISSION","EN8 / EN24","CNC turning + Grinding","Drive lines, gearboxes","Ø 8–120 mm","±0.01 mm","Ra 0.4 µm","ISO 286"],["Bushes","SUSPENSION","Bronze / steel","CNC turning","Suspension joints","Ø 10–80 mm","±0.015 mm","Ra 0.8 µm","Customer drawing"],["Bearings","INDUSTRIAL","Bearing steel","Grinding + Honing","Wheel hubs, industrial","Ø 15–90 mm","P5 class","Ra 0.2 µm","ISO 492"],["Hubs","BRAKING","Nodular iron","Casting + CNC","Wheel assemblies","Ø 100–180 mm","±0.03 mm","Ra 1.6 µm","Customer drawing"],["Flanges","BODY COMPONENTS","Carbon steel","Forging + Milling","Exhaust, axle","Ø 40–250 mm","±0.05 mm","Zinc plated","Customer drawing"],["Precision Fasteners","ELECTRICAL","Stainless steel","Cold heading + Thread rolling","Terminals, housings","M3–M24","6g / 6H","Passivated","ISO 898-1"],["Machined Components","INDUSTRIAL","Steel / Aluminium","CNC machining","Custom assemblies","On request","±0.01 mm","As specified","Customer drawing"]];
+const APPS=["Passenger Vehicles","Commercial Vehicles","Heavy Trucks","Buses","Agricultural Vehicles","Construction Equipment","Industrial Equipment","EV Components","Two-Wheelers"];
+const STEPS=[["Engineering & Design","Drawing review, feasibility and process planning."],["Raw Material Inspection","Certificates, chemistry and hardness checked on arrival."],["CNC / Forging / Casting","Primary forming of the blank to near-net shape."],["Precision Machining","Turning, milling and grinding to final dimensions."],["Heat Treatment","Controlled hardening and tempering for strength."],["Surface Finishing","Plating, coating or polishing per specification."],["Quality Inspection","Dimensional, hardness and surface checks with records."],["Packaging & Dispatch","Protective packing, labelling and documentation."]];
+const QC=["Incoming Material Inspection","In-Process Inspection","Final Inspection","Dimensional Inspection","Hardness Testing","Surface Finish Inspection","CMM Inspection","Functional Testing","Traceability"];
+const GAUGES=[["Dimensional Accuracy","±0.01 mm",.92],["Quality Inspection","100%",1],["Material Traceability","100%",1],["Production Monitoring","24/7",.85]];
+const SPECS=[["CNC MACHINING","3 / 4 / 5 AXIS"],["TOLERANCE","UP TO ±0.01 MM*"],["AUTOMATION","ROBOTIC PRODUCTION"],["INSPECTION","CMM / DIGITAL METROLOGY"]];
+const MACH=["CNC Turning Centers","CNC Machining Centers","VMC","HMC","CNC Grinding Machines","Presses","Forging Machines","Coordinate Measuring Machines","Laser Measurement Systems","Automated Inspection Systems","Robotic Automation"];
+const WHY=[["Precision","Advanced manufacturing and measurement systems."],["Consistent Quality","Controlled production and inspection processes."],["Engineering Support","Technical assistance from development to production."],["Flexible Production","Prototype, low-volume and mass-production capabilities."],["Reliable Delivery","Structured production planning and supply-chain management."],["Cost Efficiency","Optimized manufacturing processes and material utilization."]];
+const HOT=[["MATERIAL","Case-hardened alloy steel (sample)."],["DIMENSIONS","Pitch Ø 120 mm, 24 teeth (sample)."],["MACHINING","Hobbing, then CNC grinding."],["TOLERANCE","±0.01 mm on bore (sample)."],["APPLICATION","Transmission gear sets."]];
+
+/* ===== Render lists ===== */
+const put=(id,items,fn)=>{const el=$('#'+id);el.innerHTML=items.map(fn).join('');$$(':scope > *',el).forEach(rv)};
+put('capGrid',CAPS,(c,i)=>`<article class="card">${icon(i)}<span class="num">${String(i+1).padStart(2,'0')}</span><h3>${c[0]}</h3><p>${c[1]}</p><a class="more" href="#rfq" style="display:inline-block;margin-top:14px;font:600 14px var(--h);letter-spacing:.14em;color:var(--acc)">View Capability →</a></article>`);
+put('appGrid',APPS,(a,i)=>`<div class="card">${icon(i+2)}<h3>${a}</h3></div>`);
+put('whyGrid',WHY,(w,i)=>`<div class="card">${icon(i+4)}<h3>${w[0]}</h3><p>${w[1]}</p></div>`);
+put('qGrid',QC,(q,i)=>`<div class="card" style="padding:20px"><span class="num">${String(i+1).padStart(2,'0')}</span><h3 style="font-size:20px;margin:6px 0 0">${q}</h3></div>`);
+put('specGrid',SPECS,s=>`<div class="spec"><small>${s[0]}</small><b>${s[1]}</b></div>`);
+$('#chips').innerHTML=MACH.map(m=>`<span>${m}</span>`).join('');
+$('#pr').insertAdjacentHTML('beforeend',CAPS.map(c=>`<option>${c[0]}</option>`).join(''));
+$('#dash').innerHTML=GAUGES.map(g=>`<div class="gauge rv"><svg viewBox="0 0 100 100" aria-hidden="true"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45" data-v="${g[2]}"/></svg><b>${g[1]}</b><span>${g[0]}</span></div>`).join('');
+
+/* Timeline */
+$('#tl').insertAdjacentHTML('beforeend',STEPS.map((s,i)=>`<div class="step rv"><div class="dot">${String(i+1).padStart(2,'0')}</div><div><h3>${s[0]}</h3><p style="color:var(--steel)">${s[1]}</p></div><div class="pic">${icon(i,'ico')}</div></div>`).join(''));
+
+/* Products: filters, cards, modal */
+$('#filters').innerHTML=CATS.map((c,i)=>`<button class="${i?'':'on'}" data-c="${c}" aria-pressed="${!i}">${c}</button>`).join('');
+$('#prodGrid').innerHTML=PRODS.map((p,i)=>`<button class="card prod rv" data-i="${i}" data-c="${p[1]}" aria-label="View details: ${p[0]}"><div class="thumb">${icon(i,'').replace('<svg','<svg fill="none" stroke="#ff5a1f" stroke-width="1.4"')}</div><div class="pbody"><h3>${p[0]}</h3><span class="num">${p[1]}</span><dl><dt>Material: </dt><dd>${p[2]}</dd><dt>Process: </dt><dd>${p[3]}</dd><dt>Application: </dt><dd>${p[4]}</dd></dl><span class="more">View Details →</span></div></button>`).join('');
+$('#filters').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  $$('#filters button').forEach(x=>{x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});
+  $$('.prod').forEach(c=>{const show=b.dataset.c==='ALL'||c.dataset.c===b.dataset.c;c.classList.toggle('hide',!show);if(show){c.classList.remove('pop');void c.offsetWidth;c.classList.add('pop','in')}})});
+let lastFocus;
+const modal=$('#modal'),closeM=()=>{modal.classList.remove('open');lastFocus&&lastFocus.focus()};
+$('#prodGrid').addEventListener('click',e=>{const c=e.target.closest('.prod');if(!c)return;const p=PRODS[c.dataset.i];lastFocus=c;
+  $('#mt1').textContent=p[0];$('#mcat').textContent=p[1];
+  const rows=[["Application",p[4]],["Material",p[2]],["Manufacturing Process",p[3]],["Available Sizes",p[5]],["Tolerance",p[6]],["Surface Finish",p[7]],["Quality Standards",p[8]]];
+  $('#mtab').innerHTML=rows.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('');
+  $('#pc').value=p[0];modal.classList.add('open');$('#mx').focus()});
+$('#mx').onclick=closeM;$('#mrfq').onclick=closeM;modal.onclick=e=>{if(e.target===modal)closeM()};
+addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeM()});
+
+/* ===== Nav ===== */
+const nav=$('#nav'),links=$('#links'),burger=$('#burger');
+addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>60),{passive:true});
+burger.onclick=()=>{const o=links.classList.toggle('open');burger.setAttribute('aria-expanded',o);burger.textContent=o?'✕':'☰'};
+links.onclick=e=>{if(e.target.tagName==='A'){links.classList.remove('open');burger.textContent='☰';burger.setAttribute('aria-expanded',false)}};
+const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$('.links a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+$$('header[id],section[id]').forEach(s=>spy.observe(s));
+
+/* ===== Scroll reveal, counters, gauges, timeline ===== */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target)}),{threshold:.15});
+$$('.rv').forEach(el=>io.observe(el));
+const countIO=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;countIO.unobserve(e.target);
+  const n=+e.target.dataset.n,t0=performance.now(),D=reduce?1:1600;
+  const tick=t=>{const k=Math.min((t-t0)/D,1);e.target.textContent=Math.round(n*(1-Math.pow(1-k,3)))+(k===1?'+':'');k<1&&requestAnimationFrame(tick)};requestAnimationFrame(tick)}),{threshold:.6});
+$$('[data-n]').forEach(el=>countIO.observe(el));
+const gIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const f=$('.fg',e.target);f.style.strokeDashoffset=283*(1-f.dataset.v)}}),{threshold:.4});
+$$('.gauge').forEach(g=>gIO.observe(g));
+const tl=$('#tl'),fill=$('#tlfill');
+const tlUpdate=()=>{const r=tl.getBoundingClientRect(),p=Math.min(Math.max((innerHeight*.6-r.top)/r.height,0),1);fill.style.height=p*100+'%'};
+addEventListener('scroll',tlUpdate,{passive:true});tlUpdate();
+
+/* ===== Hero particles ===== */
+(()=>{const cv=$('#particles'),cx=cv.getContext('2d');if(reduce)return;let W,H,P=[];
+  const size=()=>{W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight;P=Array.from({length:innerWidth<600?25:60},()=>({x:Math.random()*W,y:Math.random()*H,v:.15+Math.random()*.5,r:Math.random()*1.6+.4}))};
+  size();addEventListener('resize',size);
+  const draw=()=>{cx.clearRect(0,0,W,H);cx.fillStyle='rgba(255,138,77,.7)';P.forEach(p=>{p.y-=p.v;if(p.y<0){p.y=H;p.x=Math.random()*W}cx.beginPath();cx.arc(p.x,p.y,p.r,0,7);cx.fill()});requestAnimationFrame(draw)};draw()})();
+
+/* ===== World map (sample routes from India) ===== */
+(()=>{const svg=$('#worldmap'),O=[690,250];
+  const R=[["India (HQ)",690,250],["Europe",500,120],["Middle East",600,215],["North America",210,150],["Southeast Asia",800,300],["Africa",520,320]];
+  let dots='';for(let x=20;x<1000;x+=20)for(let y=20;y<480;y+=20)dots+=`<circle cx="${x}" cy="${y}" r="1" fill="#2a2e34"/>`;
+  const paths=R.slice(1).map(r=>`<path class="route" d="M${O} Q${(O[0]+r[1])/2} ${Math.min(O[1],r[2])-70} ${r[1]} ${r[2]}"/>`).join('');
+  const nodes=R.map((r,i)=>`<g><circle class="${i?'':'pulse'}" cx="${r[1]}" cy="${r[2]}" r="5" fill="#ff5a1f"/><circle cx="${r[1]}" cy="${r[2]}" r="5" fill="#ff5a1f"/><text x="${r[1]+10}" y="${r[2]+4}" fill="#cfd4da" font-size="14" font-family="sans-serif">${r[0]}${i?' (sample)':''}</text></g>`).join('');
+  svg.innerHTML=dots+paths+nodes})();
+
+/* ===== RFQ form (front-end demo) ===== */
+const form=$('#rfqForm');
+const setErr=(el,msg)=>{el.setAttribute('aria-invalid',!!msg);el.parentElement.querySelector('.err').textContent=msg||''};
+form.addEventListener('submit',e=>{e.preventDefault();let ok=true;
+  $$('[required]',form).forEach(el=>{const bad=!el.value.trim()||(el.type==='email'&&!/^\S+@\S+\.\S+$/.test(el.value));setErr(el,bad?(el.type==='email'?'Enter a valid email address.':'This field is required.'):'');if(bad)ok=false});
+  const f=$('#fl').files[0];if(f&&!/\.(pdf|dwg|dxf|step|stp|stl|jpe?g|png)$/i.test(f.name)){setErr($('#fl'),'Use PDF, DWG, DXF, STEP, STL, JPG or PNG.');ok=false}else setErr($('#fl'),'');
+  if(!ok){$('[aria-invalid=true]',form).focus();return}
+  form.style.display='none';const s=$('#ok');s.style.display='block';s.focus()});
+
+/* ===== 3D gear (Three.js, with fallback) ===== */
+(()=>{const stage=$('#stage'),hot=$('#hot');
+  hot.innerHTML=HOT.map((h,i)=>`<button data-i="${i}" aria-expanded="false">${h[0]}<span>${h[1]}</span></button>`).join('');
+  hot.onclick=e=>{const b=e.target.closest('button');if(!b)return;$$('button',hot).forEach(x=>{const on=x===b&&!x.classList.contains('on');x.classList.toggle('on',on);x.setAttribute('aria-expanded',on)})};
+  const fail=()=>stage.classList.add('nofx');
+  // Load Three.js lazily when the section approaches the viewport
+  let started=false;
+  new IntersectionObserver((es,ob)=>{if(!es[0].isIntersecting||started)return;started=true;ob.disconnect();
+    const s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';s.onload=init;s.onerror=fail;document.head.appendChild(s)},{rootMargin:'300px'}).observe(stage);
+  function init(){try{
+    const cv=$('#c3d'),T=THREE,r=new T.WebGLRenderer({canvas:cv,antialias:true,alpha:true});
+    r.setPixelRatio(Math.min(devicePixelRatio,1.5));
+    const sc=new T.Scene(),cam=new T.PerspectiveCamera(40,1,.1,100);
+    // Gear profile: toothed outer edge with a bore hole
+    const N=24,sh=new T.Shape();
+    for(let i=0;i<N*4;i++){const a=i/(N*4)*Math.PI*2,ph=i%4,rad=(ph===1||ph===2)?2.25:1.85;i?sh.lineTo(Math.cos(a)*rad,Math.sin(a)*rad):sh.moveTo(Math.cos(a)*rad,Math.sin(a)*rad)}
+    const hole=new T.Path();hole.absarc(0,0,.6,0,Math.PI*2,true);sh.holes.push(hole);
+    const g=new T.ExtrudeGeometry(sh,{depth:.7,bevelEnabled:true,bevelSize:.04,bevelThickness:.04,bevelSegments:2});g.center();
+    const mesh=new T.Mesh(g,new T.MeshStandardMaterial({color:0xb9bec5,metalness:.9,roughness:.32}));sc.add(mesh);
+    const key=new T.DirectionalLight(0xffffff,1.1),fillL=new T.PointLight(0xff5a1f,.6);key.position.set(4,5,6);fillL.position.set(-5,-2,3);sc.add(key,fillL,new T.AmbientLight(0x404650,.9));
+    const modes=[[1.1,.6,0xffffff],[.3,1.6,0xff5a1f],[1.6,.2,0x9fc4ff]];let m=0;
+    let rx=.4,ry=.6,dist=9,drag=false,px=0,py=0,idle=true;
+    const size=()=>{const w=stage.clientWidth,h=stage.clientHeight;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()};size();addEventListener('resize',size);
+    cv.addEventListener('pointerdown',e=>{drag=true;idle=false;px=e.clientX;py=e.clientY;cv.setPointerCapture(e.pointerId);stage.style.cursor='grabbing'});
+    cv.addEventListener('pointermove',e=>{if(!drag)return;ry+=(e.clientX-px)*.01;rx+=(e.clientY-py)*.01;px=e.clientX;py=e.clientY});
+    const up=()=>{drag=false;stage.style.cursor='grab'};cv.addEventListener('pointerup',up);cv.addEventListener('pointercancel',up);
+    const zoom=d=>dist=Math.min(16,Math.max(4.5,dist+d));
+    cv.addEventListener('wheel',e=>{e.preventDefault();zoom(e.deltaY*.005)},{passive:false});
+    $('#zin').onclick=()=>zoom(-1.2);$('#zout').onclick=()=>zoom(1.2);
+    $('#reset').onclick=()=>{rx=.4;ry=.6;dist=9;idle=true};
+    $('#light').onclick=()=>{m=(m+1)%3;key.intensity=modes[m][0];fillL.intensity=modes[m][1];key.color.setHex(modes[m][2])};
+    let vis=true;new IntersectionObserver(es=>vis=es[0].isIntersecting).observe(stage);
+    const loop=()=>{requestAnimationFrame(loop);if(!vis)return;if(idle&&!reduce)ry+=.005;
+      mesh.rotation.set(rx,ry,0);cam.position.set(0,0,dist);r.render(sc,cam)};loop();
+  }catch(err){fail()}}
+})();
+
+/* ===== Loader ===== */
+addEventListener('load',()=>setTimeout(()=>$('#loader').classList.add('done'),reduce?0:1300));
+</script>
+</body>
+</html>
